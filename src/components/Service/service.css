@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+  width: 100%;
+}
+
+.wrap_items {
+  border-radius: 0.625rem;
+  height: 400px;
+  width: 220px;
+  border: 1px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 10px 20px rgb(40, 40, 40);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.wrap_items:hover {
+  background-color: var(--main-color);
+  transform: scale(1.1);
+}
+
+.wrap_items:hover button {
+  background-color: #fff;
+  color: #111;
+}
+
+.wrap_items img {
+  width: 100%;
+  height: 50%;
+  padding: 0 10px;
+}
+
+.wrap_items h2 {
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 25px;
+}
+
+.wrap_items button {
+  width: 150px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 0.625rem;
+  height: 35px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.wrap_items button:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.containerService {
+  background-color: #fafafa;
+  padding-top: 40px;
+}
+
+.desk .img img {
+  margin: 0 30px;
+  width: 450px;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px rgb(40, 40, 40);
+  height: 400px;
+  padding: 30px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.desk .img img:hover {
+  transform: scale(1.03);
+}
+
+.tekst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desc-dop {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 896px) {
+  .col-1 p {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .desk .img {
+    display: none;
+  }
+
+  .desk {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .title_1 {
+    font-size: 10px;
+    line-height: 30px;
+  }
+}

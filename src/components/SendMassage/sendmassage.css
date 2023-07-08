@@ -1,0 +1,147 @@
+.form {
+  padding: 120px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.form-content {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  min-height: 352.65px;
+  border: 0.808824px solid #dbdbdb;
+  box-shadow: 0px 19.4118px 58.2353px rgba(142, 192, 67, 0.37);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-content h1 {
+  font-weight: 600;
+  padding: 40px;
+  font-size: 18.6029px;
+  line-height: 22px;
+  text-align: center;
+  color: #272e28;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flexbox .input-forms {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-forms .formS {
+  height: 40px;
+  width: 70%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0.808824px solid rgba(39, 46, 40, 0.53);
+  border-radius: 8.08824px;
+}
+
+.accept {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.right-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side .form-btn {
+  width: 70%;
+  height: 40px;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  padding: 1em 1.8em;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #111;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 990px) {
+  .flexbox {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .flexbox .input-forms {
+    position: relative;
+    top: -60px;
+    width: 100%;
+  }
+
+  .formS {
+    margin: 20px;
+  }
+
+  .right-side .form-btn {
+    position: relative;
+    bottom: -350px;
+    min-width: 100%;
+  }
+
+  .accept {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .right-side img {
+    display: none;
+  }
+
+  .form {
+    padding: 120px 20px;
+  }
+
+  .form-content {
+    padding: 0;
+  }
+
+  .form-content h1 {
+    padding: 40px 0;
+  }
+
+  .flexbox .input-forms {
+    position: relative;
+    top: -100px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,156 @@
+.container-class {
+  padding-top: 100px;
+  min-height: 120vh;
+  background-image: url("../../img/about.bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_1 {
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.desc {
+  position: relative;
+  z-index: 1;
+}
+
+.desc .img img {
+  margin: 0 30px;
+  width: 450px;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px rgb(40, 40, 40);
+  height: 400px;
+  padding: 30px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.desc .img img:hover {
+  transform: scale(1.03);
+}
+
+.desc p {
+  text-align: center;
+  width: 50%;
+  font-weight: 600;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btn-class {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+}
+
+.overlayR {
+  width: 100%;
+  height: 120vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.8)
+  );
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 0;
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background-color: #fafafa;
+}
+
+.wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+  width: 100%;
+}
+
+.wrp_items {
+  border-radius: 0.625rem;
+  height: 150px;
+  width: 230px;
+  border: 1px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgb(40, 40, 40);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.wrp_items:hover {
+  background-color: var(--main-color);
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.card-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-items i {
+  font-size: 35px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 896px) {
+  .overlayR {
+    top: 60px;
+    min-height: 120vh;
+  }
+
+  .col-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-class {
+    min-height: 80px;
+  }
+
+  .desc p {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .container-class {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .desc .img {
+    display: none;
+  }
+}

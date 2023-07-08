@@ -1,0 +1,207 @@
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 100px;
+  background-image: url("../../img/bg.web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 37.3333px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h4 {
+  font-weight: 600;
+  font-size: 21.7778px;
+  line-height: 27px;
+  padding-top: 40px;
+  color: #1b4446;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn_class {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  width: 208px;
+  height: 43px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.03);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+.linkS {
+  text-decoration: none;
+}
+
+.social-container {
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.social-container h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.icon_box {
+  padding-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+}
+
+.icon_box a {
+  text-decoration: none;
+  color: #000;
+}
+
+.icon_box i {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.icon_box i:hover {
+  background-color: var(--main-color);
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.8)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero h1 {
+    font-size: 21px;
+    line-height: 36px;
+  }
+
+  .hero h4 {
+    font-size: 14px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .linkS {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn_class {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}

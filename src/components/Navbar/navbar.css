@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.home,
+.about,
+.catalog,
+.service,
+.reviews,
+.contacts {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: #80d0d3;
+  transition: all 0.3s ease;
+}
+
+.cart {
+  font-size: 25px;
+
+  transition: all 0.3s ease;
+}
+
+.cart:hover {
+  cursor: pointer;
+  color: #80d0d3;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 895px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    left: 75px;
+    top: 13px;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #329296;
+    left: 0;
+    top: 60px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .home,
+  .about,
+  .catalog,
+  .service,
+  .reviews,
+  .contacts {
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    background: inherit;
+    border: none;
+    outline: none;
+    top: 12px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .cart {
+    position: absolute;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .logo {
+    display: none;
+  }
+}
